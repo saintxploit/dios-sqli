@@ -1,18 +1,29 @@
-# DIOS — Dump In One Shot
+```bash
+# =============================
+#   DIOS — Dump In One Shot
+# =============================
+```
 
-**DIOS** adalah proof-of-concept (PoC) yang mengekspor hasil query MySQL dalam format HTML terstruktur supaya hasil *database dump* mudah dibaca di browser. Payload ini menggabungkan teknik SQL (mis. concat yang diberi komentar MySQL) dan enkoding hex untuk menghasilkan blok HTML/CSS/JS secara langsung dari hasil query.
+> ⚠️ **Disclaimer:** For educational, security research, and red team testing only.  
+> Do not use this tool to exploit systems without explicit authorization.
 
-> ⚠️ **Penting:** DIOS dibuat semata-mata untuk tujuan **edukasi, riset keamanan, dan pengujian (red team / pentest)** di lingkungan yang Anda miliki atau yang Anda punya izin eksplisit untuk diuji. **Jangan** gunakan alat ini untuk mengeksploitasi sistem tanpa izin.
+```bash
+[ Summary ]
+DIOS is a proof-of-concept (PoC) payload that exports MySQL query results
+into structured HTML format, making database dumps easier to read in a browser.
+It leverages SQL concat with MySQL comments and hex encoding to inject HTML/CSS/JS.
 
----
+[ Features ]
+- Render MySQL server info (host, version, user, OS, port, datadir).
+- Display user privileges and `information_schema` metadata (tables & columns).
+- Outputs results styled with Bootstrap classes for a clean layout.
+- Includes watermark/branding to mark the PoC source.
 
-## Fitur utama
-- Merender informasi server MySQL (host, versi, user, kompiler OS, port, datadir) ke dalam layout HTML.
-- Menampilkan ringkasan hak akses user (privileges) dan metadata `information_schema` (tabel & kolom).
-- Mengemas output menggunakan markup HTML yang memakai kelas-kelas Bootstrap untuk tampilan yang rapi.
-- Watermark/branding untuk menandai sumber PoC.
-  
----
+[ Ethics & Legal ]
+- Use is allowed only if it is **legal** and **ethical** within your environment.
+- The repository owner is **not responsible** for any misuse or illegal activity.
+```
 
-## Etika & Legal
-Dengan menggunakan materi di repo ini, Anda menyatakan bahwa penggunaan Anda adalah **legal** dan **etis**. Pemilik repo **tidak bertanggung jawab** atas penyalahgunaan atau konsekuensi hukum akibat penggunaan materi ini pada sistem tanpa izin.
+```bash
+$ echo "Analyze responsibly. Use only in authorized labs."
+```
